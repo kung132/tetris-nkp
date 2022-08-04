@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tetris - nkp</title>
+    <link rel="stylesheet" href="css/tetris.css">
+</head>
+<body>
+    <canvas id="main" width="300px" height="600px"></canvas>
+    <canvas id="next" width="120px" height="60px"></canvas>
+    <div id="scoreBox"> <!-- fullline 시 innerHTML 로 스코어 변환-->
+        <h3 id="score">Score: 0</h3>
+    </div>
+    <div id="buttons">
+        <button onclick="action.move(false);">좌</button>
+        <button onclick="action.move(true);">우</button>
+        <button onclick="action.rotate();">회전</button>
+        <button onclick="action.moveDown();">하강</button>
+    </div>
+    <script src="js/actions.js"></script>
+    <script src="js/block.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/tetris.js"></script>
+</body>
+</html>
